@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ej Resumen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="autor" content="Javier Mateo">
+        <meta name="description" content="Ejercicio Resumen HTML5">
+        <style>
+            table {
+                border-collapse: collapse;
+                margin: 0 auto;
+            }
+            thead th {
+                background-color: navajowhite;
+            }
+            tbody th {
+                background-color: gainsboro;
+            }
+            thead th, tbody td, tbody th {
+                border: 1px solid black;
+            }
+            caption {
+                font-weight: bold;
+            }
+            th, td {
+                text-align:center;
+                width: 100px;
+                height: 50px;
+            }
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <center>
+                <h1>Roscones "La prima de MFer"</h1>
+                <img src="img/roscon.jpg" alt="Roscon Logo" width="15%"><br><br>    
+            </center>
+        </header>
+
+        <section>
+            <table>
+                <caption><b>Precios del Roscon de Reyes</b></caption>
+                <thead>
+                    <tr>
+                        <td rowspan="2"></td>
+                        <th colspan="2">Relleno de nata</th>
+                        <th colspan="2">Relleno de Chocolate</th>
+                        <th colspan="2">Sin Relleno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>1-2 Toppings</td>
+                        <td>3-4 Toppings</td>
+                        <td>1-2 Toppings</td>
+                        <td>3-4 Toppings</td>
+                        <td>1-2 Toppings</td>
+                        <td>3-4 Toppings</td>
+                    </tr>
+                    <tr>
+                        <th>Mediano</th>
+                        <td>35€</td>
+                        <td>40€</td>
+                        <td>30€</td>
+                        <td>35€</td>
+                        <td>25€</td>
+                        <td>30€</td>
+                    </tr>
+                    <tr>
+                        <th>Grande</th>
+                        <td>45€</td>
+                        <td>50€</td>
+                        <td>40€</td>
+                        <td>45€</td>
+                        <td>35€</td>
+                        <td>40€</td>
+                    </tr>
+                    <tr>
+                        <td colspan="7">Todos los envíos a domicilio tendrán un coste de 6,50€</td>
+                    </tr>
+                </tbody>
+                    
+            </table><br><br>
+        </section><br><br>
+        
+        <section>
+            <center>
+                <h2>Nuestros Roscones</h2>
+                <article>
+                    <img src="img/rosconChoco.jpg" alt="Roscon con relleno de Chocolate" width="20%">
+                    <img src="img/rosconSin.jpg" alt="Roscon sin relleno" width="30%"">
+                    <img src="img/rosconNata.jpg" alt="Roscon con relleno de Nata" width="30%"">
+                </article>
+            </center>
+        </section><br><br>
+
+        <section>
+            <center><h2>RESERVA TU ROSCO</h2></center>
+            <p><b>Porfavor rellene el siguiente formulario para hacer su reserva:</B></p>
+            <fieldset style="background-color: lightgrey;">
+                <legend style="background-color: white;"><b>Formulario de Reserva</b></legend><br>
+
+                <fieldset>
+                    <legend>Información del comprador</legend><br>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre"><br><br>
+
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos" name="apellidos"><br><br>
+
+                    <label for="direccion">Dirección: </label>
+                    <input type="text" id="direccion" name="direccion"><br><br>
+
+                    <label for="envio">Tipo de envío: </label>
+                    <input type="radio" id="domicilio" name="envio" value="domicilio">
+                    <label for="domicilio">Entrega a Domicilio</label>
+                    <input type="radio" id="tienda" name="envio" value="tienda">
+                    <label for="tienda">Entrega en Tienda</label><br><br>
+                </fieldset><br>
+                
+
+                <fieldset>
+                    <legend>Información del rosco</legend><br>
+                    <label for="relleno">Tipo de Relleno</label>
+                    <select id="relleno">
+                        <option>Nata</option>
+                        <option>Chocolate</option>
+                        <option>Sin relleno</option>
+                    </select><br><br>
+
+                    <label for="tamano">Tamaño: </label><br>
+                    <input type="radio" id="grande" name="tamano" value="grande"> 
+                    <label for="grande">Grande   </label>
+                    <input type="radio" id="mediano" name="tamano" value="mediano"> 
+                    <label for="mediano">Mediano </label><br><br>
+
+                    <label for="toppings">Elige los toppings extra que quieras: </label><br>
+                    <input type="checkbox" id="frutaEscarchada" name="frutaEscarchada">
+                    <label for="frutaEscarchada">Fruta Escarchada</label><br>
+                    <input type="checkbox" id="almendra" name="almendra">
+                    <label for="almendra">Almendras</label><br>
+                    <input type="checkbox" id="virutasChocolate" name="virutasChocolate">
+                    <label for="virutasChocolate">Virutas de chocolate</label><br>
+                    <input type="checkbox" id="cocoPolvo" name="cocoPolvo">
+                    <label for="cocoPolvo">Coco en Polvo</label><br><br>
+
+                    <label for="fecha">Fecha en la que quieres recibir el rosco: </label>
+                    <input type="date" id="fecha" name="fecha">
+
+                </fieldset>
+            </fieldset><br>
+            <input type="submit" id="enviar" name="enviar" value="Enviar">
+        </section>
+        
+        
+    </body>
+</html>

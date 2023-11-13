@@ -1,0 +1,67 @@
+html {
+    background-image: url(img/fondo_papel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+thead th {
+    background-image: url(img/unicornio.jpg);
+}
+thead th, tbody td, tbody th {
+    border: 1px solid black;
+}
+caption {
+    font-weight: bold;
+}
+th, td {
+    text-align:center;
+    width: 100px;
+    height: 50px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hour {
+    background-image: url(img/fondo_estrellado.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: red;
+    font-weight: bold;
+}
+tbody {
+    background-image: url(img/star.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+}
+
+tbody tr td a:link{
+    color:orange;
+    text-decoration: none;
+}
+tbody tr td a:hover{
+    color:black;
+    background-image: url(img/croi.jpg);
+    background-size: cover;
+    background-position: center;
+    font-size: x-large;
+    text-decoration: underline;
+}
+tbody tr td a:visited {
+    color: darkturquoise;
+}
+caption {
+    caption-side:bottom;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+    font-size: larger;
+    text-align: right;
+}
