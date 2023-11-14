@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html><html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ej Forms</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Javier Mateo">
+        <meta name="description" content="Ejercicio Formularios">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <div>
+            <form>
+            <h2>Haz tu reserva</h2>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre"><br>
+                <label for="correo">Correo electrónico: </label>
+                <input type="email" id="correo" name="correo"><br>
+                <label for="telefono">Teléfono: </label>
+                <input type="tel" id="telefono" name="telefono"><br>
+                <label for="fecha">Fecha: </label>
+                <input type="date" id="fecha" name="fecha"><br>
+                <label for="franjaHoraria">Franja Horaria: </label>
+                <select id="franjaHoraria">
+                    <option>10:00 -- 11:00</option>
+                    <option>11:00 -- 12:00</option>
+                    <option>12:00 -- 13:00</option>
+                    <option>13:00 -- 14:00</option>
+                    <option>14:00 -- 15:00</option>
+                </select><br>
+                <label for="comensales">Comensales(min 1,max 10): </label>
+                <input type="number" id="comensales" name="comensales" min="1" max="10"><br>
+                <label for="mantel">Color del mantel</label>
+                <input type="color" id="mantel"><br>
+                <label for="Demandas">Demandas especiales</label><br>
+                <textarea placeholder="alergias, tronas, ..."></textarea><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        
+    </body>
+</html>

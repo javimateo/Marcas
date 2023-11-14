@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Javier Mateo">
+    <meta name="description" content="Ejercicio de clase sobre listas">
+    <title>Listas</title>
+    
+</head>
+<body >
+    <style type="text/css">
+                    li.title { 
+                font-size: 20px; 
+                font-weight: lighter; 
+                padding: 15px; 
+                counter-increment: ordem; 
+            }
+            .foo { 
+                counter-reset: foo; 
+                padding-left: 15px; 
+            }
+            .foo li { 
+                list-style-type: none; 
+            }
+            .foo li:before { 
+                counter-increment: foo; 
+                content: counter(ordem) "." counter(foo) " "; 
+            }
+    </style>
+    <div style="font-weight: bold;" >
+        <h2>Lista desordenada</h2>
+        <ul style="list-style-type: circle;">
+            <li>Inicio</li>
+            <li>Sobre mi</li>
+        <ul style="list-style-type: circle">
+            <li>Estructura contenido</li>
+                <li>Marketing</li>
+                <li>Maquetacon  web</li>
+                <ul style="list-style-type: circle">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </ul>
+            <li>Testimonios</li>
+            <li>Contacto</li>
+        </ul>
+
+        <h2>Lista ordenada</h2>
+        <ol>
+            <li>América</li>
+            <ol class="foo">
+                <li>América central</li>
+                <li>América sur</li>
+                <li>América norte</li>
+            </ol>
+            <li>África</li>
+            <ol class="foo">
+                <li>África Septentrional</li>
+                <li>África Occidental</li>
+                <li>África Central</li>
+                <li>África Oriental</li>
+                <li>África Meridional</li>
+            </ol>
+            <li>Antártida</li>
+            <ol class="foo">
+                <li>Antártida oriental</li>
+                <li>Antártida occidental</li>
+            </ol>
+            <li>Asia</li>
+            <li>Europa</li>
+            <li>Oceanía</li>
+        </ol>
+</div>
+</body>
+</html>

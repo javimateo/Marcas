@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="autor" content="Javier Mateo">
+        <meta name="description" content="Ejemplo tabla">
+        <link href="https://fonts.googleapis.com/css?family=Rock+Salt:regular" rel="stylesheet" />
+        
+        <style>
+            html {
+                font-family: "helvetica neue", helvetica, arial, sans-serif;
+            }
+            table {
+                table-layout: fixed;
+                width: 100%;
+                border-collapse: collapse;
+                border: 3px solid purple;
+            }
+            thead th,
+            tfoot th {
+                font-family: "Rock Salt";
+            }
+            thead th:nth-child(1) {
+                width: 30%;
+            }
+            thead th:nth-child(2) {
+                width: 20%;
+            }
+            thead th:nth-child(3) {
+                width: 15%;
+            }
+            thead th:nth-child(4) {
+                width: 35%;
+            }
+
+            th,td {
+                padding: 20px;
+            }
+            th {
+              letter-spacing: 2px;
+            }
+
+            td {
+              letter-spacing: 1px;
+            }
+
+            tbody td {
+              text-align: center;
+            }
+
+            tfoot th {
+              text-align: right;
+            }
+            thead,
+            tfoot {
+              background: url(img/leopardskin.jpg);
+              color: white;
+              text-shadow: 1px 1px 1px black;
+            }
+
+            thead th,
+            tfoot th,
+            tfoot td {
+              background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0.1),
+                rgba(0, 0, 0, 0.5)
+              );
+              border: 3px solid purple;
+            }
+            tbody tr:nth-child(odd) {
+            background-color: #ff33cc;
+            }
+            
+            tbody tr:nth-child(even) {
+              background-color: #e495e4;
+            }
+            
+            tbody tr {
+              background-image: url(img/noise.png);
+            }
+            
+            table {
+              background-color: #ff33cc;
+            }
+            caption {
+              font-family: "Rock Salt", cursive;
+              padding: 20px;
+              font-style: italic;
+              caption-side: bottom;
+              color: #666;
+              text-align: right;
+              letter-spacing: 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <table summary="Los grupos de música punk más famosos del Reino Unido">
+            <caption>
+              Un resumen de los grupos de música punk más famosos del Reino Unido
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Año de formación</th>
+                <th scope="col">Número de álbumes</th>
+                <th scope="col">Canción más conocida</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Buzzcocks</th>
+                <td>1976</td>
+                <td>9</td>
+                <td>Ever fallen in love (with someone you shouldn't've)</td>
+              </tr>
+              <tr>
+                <th scope="row">The Clash</th>
+                <td>1976</td>
+                <td>6</td>
+                <td>London Calling</td>
+              </tr>
+                         ... se han eliminado algunas filas por abreviar
+                         <tr>
+                <th scope="row">The Stranglers</th>
+                <td>1974</td>
+                <td>17</td>
+                <td>No More Heroes</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="2">Número total de álbumes</th>
+                <td colspan="2">77</td>
+              </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
