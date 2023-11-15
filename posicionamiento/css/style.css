@@ -24,6 +24,9 @@ body {
     float: right;
     background-color: grey;
     width: 30%;
+    border:solid;
+    border-width:  0 10px;
+    border-color: rgb(125, 206, 206);
 }
 .content {
     display: flex;
@@ -40,7 +43,4 @@ h2 {
 }
 .content p {
     margin: 4px;
-}
-.articles {
-    display: block;
 }
