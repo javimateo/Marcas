@@ -1,0 +1,83 @@
+body {
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.5);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cabecera {
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    display: inline-flex;
+}
+.logo {
+    padding-top: 20px;
+    height: 80%;
+    width: 15%;
+}
+.menu {
+    margin-left: 10%;
+    width: 80%;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    float: right;
+}
+.menu li {
+    display: inline-flex;
+    padding:  20px 20px;
+}
+.menu li:first-child {
+    background-color: red;
+    border: solid 0;
+    border-radius: 5px;
+    color: white;
+}
+.first {
+    margin: 0 auto;
+    width: auto;
+    height: 600px;
+    background-image: url(../img/nurse.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    padding-left: 10%;
+}
+.first h2{
+    margin: 0;
+    font-size:60px;
+    padding-top: 15%;
+}
+.first h2 b {
+    color: rgb(245, 100, 100);
+}
+.first p {
+    font-size: x-large;
+    width: 35%;
+}
+.second {
+    height:500px;
+    width: 100%;
+    margin:0 auto;
+    background-color: white;
+}
+.second div {
+    width: 25%;
+    height: 30%;
+    margin: 0 auto;
+    float: left;
+    padding: 2%;
+}
+.second img {
+    width: 4%;
+    float: left;
+    padding-top: 3%;
+}
+.second div p {
+    color: rgb(137, 136, 136);
+    line-height: 190%;
+}
+.third {
+    height: 400px;
+    width: 100%;
+}
