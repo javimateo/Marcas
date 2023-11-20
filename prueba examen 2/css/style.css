@@ -80,4 +80,36 @@ body {
 .third {
     height: 400px;
     width: 100%;
+    margin: 0 auto;
+}
+.left {
+    width: 50%;
+    height: 450px;
+    float:left;
+    margin: 0;
+}
+.left img {
+    width: 100%;
+}
+.right {
+    width: 50%;
+    height: 110%;
+    background-color: orangered;
+    float: right;
+    margin: 0;
+}
+.right fieldset {
+    width: 80%;
+    height: 400px;
+    margin: 20px;
+    border: 0;
+    color: white;
+    letter-spacing: 1px;
+}
+.right fieldset h2 {
+    font-size: x-large;
+}
+.right fieldset input,textarea {
+    border: 0;
+    border-radius: 5px;
 }
