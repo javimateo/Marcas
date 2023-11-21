@@ -1,0 +1,263 @@
+    <!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es mi portfolio personal">
+    <meta name="keywords" content="html, css, sass, bootstrap, js, portfolio, proyectos">
+    <meta name="language" content="EN">
+    <meta name="author" content="juanjose.gavilan@a.vedrunasevillasj.es">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Tuesday, February 28th, 2023, 23:00pm">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+
+    <script src="https://kit.fontawesome.com/d227f5ab50.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://kit.fontawesome.com/d227f5ab50.css" crossorigin="anonymous">
+
+    <link href="Css/Style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="Js/Main.js" defer></script>
+
+    <link rel="shortcut icon" href="Img/foto letra J.jpeg" type="image/xpng">
+
+    <title>JuanJose's portfolio</title>
+
+</head>
+
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/JGM/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="redes">
+                        <a href="https://discord.com/login"><i class="fa-brands fa-discord"></i></a>
+                        <a href="https://github.com/JuanGM23"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenido</p>
+                <h2>Soy <span>Juan Jose Gavilan Mendez</span>, estudiante del ciclo superior Desarrollo de Aplicaciones
+                    Web</h2>
+                <p class="descripcion">LLevo 1 año estudiando el modulo de DAW/DAM, orientado mayormente al frontend y
+                    con ganas de seguir aprendiendo.</p>
+                <a href="#portfolio">Acceder a mi Portfolio</a>
+            </div>
+        </div>
+    </section>
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="Img/foto letra J.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Juan Jose Gavilan Mendez</span> </h2>
+            <h3> Estudiante del ciclo superior de Desarrollo de Aplicaciones Web</h3>
+            <p>LLevo 1 año estudiando el modulo de DAW/DAM, orientado mayormente al frontend y con ganas de seguir
+                aprendiendo.</p>
+            <p> En un futuro me gustaria dedicarme al Desarrollo Web y continuar con mi aprendizaje.</p>
+            <a href="#">Descargar CV</a>
+        </div>
+    </section>
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Teoria</li>
+                    <li>Practica</li>
+                </ul>
+                <p>Durante este año, he estado realizando varias paginas Web.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-java"></i></span>
+                <h4>Programacion Java</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Programas</li>
+                    <li>Teoria</li>
+                    <li>Practica</li>
+                </ul>
+                <p>Durante este año, he estado realizando programas con Java.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Bases de Datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Gestion BDD</li>
+                    <li>Teoria</li>
+                    <li>Practica</li>
+                </ul>
+                <p>Durante este año, he estado realizando varias gestiones en el entorno de las Bases de Datos.</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Frontend</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Teoria</li>
+                    <li>Practica</li>
+                </ul>
+                <p>Durante este año, he estado aprendiendo acerca del Frontend.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-terminal"></i></span>
+                <h4>Backend</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Tecnicas/codigo</li>
+                    <li>Teoria</li>
+                    <li>Practica</li>
+                </ul>
+                <p>Durante este año, he estado aprendiendo acerca del Backend.</p>
+            </div>
+        </div>
+    </section>
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">65%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>MySQL</p>
+                <span class="porcentaje">75%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Java</p>
+                <span class="porcentaje">80%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="java"></div>
+            </div>
+        </div>
+    </div>
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion de Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="Img/Proyecto2.jpeg" alt="">
+                <div class="info">
+                    <h4>Descripcion de Proyecto</h4>
+                    <p>Programas</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="Img/Proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion de Proyecto</h4>
+                    <p>Bases de Datos</p>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion de Proyecto</h4>
+                    <p>Frontend</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion de Proyecto</h4>
+                    <p>Backend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo " class="input-mitad">
+                    <input type="email" placeholder="Direccion de correo electronico" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto:" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Juan Jose Gavilan Mendez | 2023</p>
+        <div class="redes">
+            <a href="https://discord.com/login"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://github.com/JuanGM23"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
