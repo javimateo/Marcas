@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: #FF0000; /* Fondo rojo */
+      width: 15%; /* Ancho del menú */
+      height: 100vh; /* Altura completa del viewport */
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow-y: auto; /* Agrega una barra de desplazamiento si el menú es demasiado largo */
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      border-top: 1px solid #FFFFFF; /* Borde superior blanco */
+      border-bottom: 1px solid #FFFFFF; /* Borde inferior blanco */
+    }
+
+    nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+    }
+
+    nav a:hover {
+      background-color: #990000; /* Cambia el color al pasar el ratón */
+    }
+
+    /* Ajuste del espacio para el contenido de la página */
+    .content {
+      margin-left: 15%; /* Igual al ancho del menú */
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Servicios</a></li>
+    <li><a href="#">Productos</a></li>
+    <li><a href="#">Contacto</a></li>
+    <li><a href="#">Opción 5</a></li>
+    <li><a href="#">Opción 6</a></li>
+  </ul>
+</nav>
+
+<!-- Contenido de la página -->
+<div class="content">
+  <h1>Contenido de la Página</h1>
+  <p>Este es el contenido principal de tu página.</p>
+</div>
+
+</body>
+</html>
