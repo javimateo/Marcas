@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+html {
+    scroll-behavior: smooth;
+}
+.menu {
+    height: 100vh;
+    width: 15%;
+    background-color: rgb(7, 7, 138);
+    color: white;
+    background-color: black;
+    position: fixed;
+    opacity: 0.85;
+}
+.menu h1 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    
+}
+.enlaces li {
+    padding: 5%;
+    border-top: solid white 2px;
+    border-bottom: solid white 2;
+}
+.enlaces li:last-child {
+    border-bottom: solid white 2px;
+}
+.enlaces a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+.enlaces a:hover{
+    color:red;
+}
+.principal {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Img/fondo-inicio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.inicio {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(11, 11, 11, 0.6);
+}
+.inicio p{
+    color: white;
+    text-align: center;
+}
+.inicio .welcome {
+    letter-spacing: 10px;
+    text-align: center;
+    padding: 20% 20% 20px;
+    font-size: x-large;
+    
+}
+.inicio .bienvenida {
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+.inicio .nombre {
+    text-transform: uppercase;
+    color: orangered;
+    font-size: larger;
+}
+.inicio .nombre:hover {
+    text-decoration: underline;
+}
+.inicio .info-inicio {
+    padding-bottom: 40px;
+}
+
+.inicio .btn-sobremi {
+    margin: 8% 21% 0 47%;
+    padding:10px 20px ;
+    border: solid 2px white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+.inicio .btn-sobremi:hover{
+    background-color: orangered;
+    
+}
+.sobre-mi {
+    height: 20vh;
+    width: 100%;
+    margin: 0;
+    background-color: white;
+}
