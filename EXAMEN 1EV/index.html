@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Javier's viaje">
+        <meta name="keywords" content="turismo, verano, viaje, barato, vuelos">
+        <meta name="revised" content="viernes, November 24,2023">
+        <meta name="lenguage" content="spanish">
+        <meta name="author" content="javimateo2003@gmail.com">
+        <title>Javier's viaje</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                background-color: rgb(227, 241, 246);
+            }
+            .cabecera {
+                margin: 0;
+                padding: 0;
+                background-image: url(img/cielo-nubes-fondo.jpg);
+                background-position: top;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 20vh;
+            }
+            .cabecera h1 {
+                margin: auto;
+                padding: 5%;
+                text-align: center;
+                color: white;
+            }
+            .menu {
+                width: 100%;
+                height: 5%;
+                background-color: gray;
+            }
+            .menu ul {
+                margin: 0;
+                list-style-type: none;
+                color:white;
+                display: inline-flex;
+                padding: 0;
+            }
+            .menu ul li {
+                padding: 18px;
+            }
+            .primero {
+                width: 100%;
+                height: 30vh;
+                display: inline-flex;
+            }
+            .primero div {
+                width: 30%;
+                margin: 10px 1.11%;
+                padding: 10px 2.22%;
+                border: solid 1px grey;
+                border-radius: 20px;
+                text-align: center;
+                /*He apliado este overflow para que el texto no se salga del cuadrado*/
+                overflow-y: hidden;
+            }
+            .primero div img {
+                height: 35%;
+            }
+            .primero div h2 {
+                margin: 0;
+                padding: 15px 0 10px;
+            }
+            .segundo {
+                width: 100%;
+                height: 25vh;
+            }
+            .segundo table {
+                margin: 2% auto;
+            }
+            .segundo table caption {
+                font-weight: bolder;
+                padding-bottom: 2%;
+            }
+            .segundo th {
+                padding: 15px 10px;
+            }
+            .segundo table thead tr th{
+                background-color: grey;
+                color:white;
+                font-weight: lighter;
+            }
+            .segundo table tbody tr th {
+                background-color: lightblue;
+                color: grey;
+            } 
+            /* No he usado clases, he usado first:child y last:child para aplicar los estilos a la tabla*/
+            .segundo table thead tr th:first-child {
+                background-color: rgb(227, 241, 246);
+            }
+            .segundo table tbody tr th:first-child {
+                background-color: grey;
+                color:white;
+                font-weight: lighter;
+            }
+            /*aplica estilo a la ultima fila de la tabla*/
+            .segundo table tbody tr:last-child th{
+                background-color: rgb(227, 241, 246);
+                color: grey;
+                font-size: xx-large;
+                padding-top: 2px;
+            }
+            .segundo table tbody tr:last-child th:first-child{
+                font-size: medium;
+            }
+            .tercero {
+                width: 99%;
+                height: 40vh;
+                background-color: lightblue;
+                margin: 1% .5%;
+                border: solid 0;
+                border-radius: 10px;
+            }
+            .tercero .texto {
+                float: left;
+                width: 40%;
+                padding: 60px 5%;
+                text-align: center;
+                color: white;
+            }
+            .tercero .texto h2 {
+                font-weight: lighter;
+                font-size: x-large;
+            }
+            .tercero .texto p {
+                padding-top: 20px;
+                letter-spacing: 10px;
+                font-size: larger;
+            }
+            /*El formulario no se ve bien dependiendo del tamaño*/
+            .formulario {
+                float: right;
+                width: 35%;
+                height: 35vh;
+                background-color: lightgray;
+                border: solid 0;
+                border-radius: 10px;
+                margin: 20px 40px;
+            }
+            .formulario div {
+                padding: 10px;
+            }
+            .formulario div:first-child {
+                padding-top: 20px;
+            }
+            .formulario div label {
+                font-weight: bolder;
+            }
+            .formulario div input {
+                float:right;
+                margin-right: 20px;
+                border: solid 0;
+                border-radius: 2.5px;
+                padding-left: 10px;
+            }
+            .formulario div textarea {
+                border: solid 0;
+                border-radius: 3.5px;
+                color:grey;
+                height: 80px;
+                width: 99%;
+                margin-top: 4px;
+            }
+            .formulario div button {
+                width: 100%;
+                height: 30px;
+                background-color: black;
+                color: white;
+                border: solid 0;
+                border-radius: 4px;
+                margin: 20px auto 0;
+            }
+            .pie {
+                width: 99%;
+                height: 15vh;
+                background-color: lightgray;
+                margin: 0 .5% .5%;
+                padding-top: 10px;
+            }
+            .info {
+                width: 40%;
+                float:left;
+            }
+            
+            .pie .info ul{
+                list-style-type: none;
+            }
+            .pie .info ul li {
+                font-weight: bold;
+                font-size: x-small;
+                color: white;
+            }
+            /*Orden de selectores para aplicar el estilo a la segunda columa de la lista*/
+            .pie .info ul ul li {
+                font-weight: normal;
+            }
+            .logos {
+                float: right;
+                margin-right: 3%;
+            }
+            .logos img {
+                width: 50px;
+                height: 50px;
+                padding:10px 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="cabecera">
+                <h1>VEN CON NOSTROS</h1>
+            </div>
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li>Inicio</li>
+                        <li>Acerca de</li>
+                        <li>Servicios</li>
+                        <li>Portfolio</li>
+                        <li>Contacto</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section id="cajas">
+                <div class="primero">
+                    <div class="izquierda">
+                        <img src="img/ic_fluent_person_support_24_filled (1).png" alt="">
+                        <h2>SIEMPRE EN CONTACTO</h2>
+                        <p>En tus viajes, siempre estaremos en contacto contigo, para cualquier gestión que necesites hacer, desde nuestra aplicación te resolveremos cualquier cuestión. Hasta llegar a un punto o coger un taxi </p>
+                        </div>
+                    <div class="medio">
+                        <img src="img/ic_fluent_lock_closed_24_filled.png" alt="">
+                        <h2>NOS ENCARGAMOS DE TUS MALETAS</h2> 
+                        <p>No te preocupes de tus maletas, tan solo piensa en disfrutar, y nosotros haremos el resto</p>
+                    </div>
+                    <div class="derecha">
+                        <img src="img/ic_fluent_airplane_24_filled.png" alt="">
+                        <h2>DISFRUTA DEL VIAJE</h2> 
+                        <p>Siempre buscaremos el mejor sitio para que las horas que estés viajando sean lo más placenteras posibles</p>
+                        </div>
+                </div>
+            </section>
+            <section id="tabla">
+                <div class="segundo">
+                    <table>
+                        <caption>ESTOS SON NUESTROS PRECIOS</caption>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Smart Starter</th>
+                                <th>Smart Medium</th>
+                                <th>Smart Business</th>
+                                <th>Smart Deluxe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Garantías</th>
+                                <th>0,5</th>
+                                <th>1</th>
+                                <th>1,5</th>
+                                <th>2</th>
+                            </tr>
+                            <tr>
+                                <th>Cobertura</th>
+                                <th>25%</th>
+                                <th>50%</th>
+                                <th>75%</th>
+                                <th>100%</th>
+                            </tr>
+                            <tr>
+                                <th>Precio por viaje/mes</th>
+                                <th>150€</th>
+                                <th>275€</th>
+                                <th>350€</th>
+                                <th>400€</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="form">
+                <div class="tercero">
+                    <div class="texto">
+                        <h2>NO TE LA JUEGUES EN TU PRÓXIMO VIAJE Y LLAMA</h2>
+                        <p>913453457</p>
+                    </div>
+                    <!--He usado divs para cada seccion del form sin clase debido a que he usado el orden de los selectores-->
+                    <div class="formulario">
+                        <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellidos</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="1r Apellido">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="email">
+                    </div>
+                    <div>
+                        <label for="asunto">Asunto</label>
+                        <input type="text" name="asunto" id="asunto" placeholder="titular de la consulta">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10">Dinos a donde quieres viajar</textarea>
+                        <button>enviar datos</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="pie">
+                <div class="info">
+                <ul>
+                        <li>Política de Privacidad </li>
+                        <ul>
+                            <li>LOPD</li>
+                            <li>Términos y Condiciones</li>
+                        </ul>
+                        <li>Quiénes somos</li>
+                        <ul>
+                            <li>Nuestras oficinas</li>
+                            <li>Misión, Visión y Valores</li>
+                            <li>RCC</li>
+                        </ul>
+                        <li>Contacto</li>
+                        <ul>
+                            <li>Teléfono de atención al cliente:913453457</li>
+                            <li>Mail de atención al cliente:info@viajes.com</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="logos">
+                    <a href="https://www.facebook.com/vedrunasevilla/?locale=es_ES"><img src="img/facebook.png" alt="facebook image"></a>
+                    <a href=""><img src="img/whatsapp.png" alt="whatsapp image"></a>
+                    <a href="https://www.instagram.com/fpvedrunasevilla/?hl=es"><img src="img/instagram.png" alt="instagram image"></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

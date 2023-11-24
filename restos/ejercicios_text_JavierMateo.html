@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Javier Mateo">
+    <meta name="description" content="Ejercicios texto CSS">
+    <title>Ejercicios texto CSS</title>
+    <style>
+        .cursive {
+            font-family: cursive;
+            font-weight: bold;
+        }
+        .georgia {
+            font-family: Georgia;
+        }
+        .fantasy {
+            font-family: fantasy;
+            font-weight: bold;
+        }
+        .times-new-roman {
+            font-family: 'Times New Roman';
+        }
+        .monospace {
+            font-family: monospace;
+            font-weight: bold;
+        }
+        .left {
+            text-align: left;
+            font-weight: bold;
+        }
+        .right {
+            text-align: right;
+        }
+        .center {
+            text-align: center;
+            font-weight: bold;
+        }
+        .justify {
+            text-align: justify;
+        }
+        table {
+            border-style: solid;
+            border: 3px black;
+            border-collapse: collapse;
+            width: 50%;
+            height: 250px;
+        }
+        tr, td{
+            border: solid 3px black;
+        }
+        .top {
+            vertical-align: top;
+        }
+        .mid {
+            vertical-align: middle;
+        }
+        .bottom {
+            vertical-align: bottom;
+        }
+        .sangria {
+            text-indent: 70px;
+        }
+        .cap {
+            text-transform: capitalize;
+        }
+        .upper{
+            text-transform: uppercase;
+        }
+        .lower {
+            text-transform: lowercase;
+        }
+        .space4 {
+            letter-spacing: 4px;
+        }
+        .space-2 {
+            letter-spacing: -2px;
+        }
+    </style>
+</head>
+<body>
+    <p class="cursive">Este es un párrafo con tipo de letra cursive</p>
+    <p class="georgia">Este es un párrafo con tipo de letra georgia</p>
+    <p class="fantasy">Este es un párrafo con tipo de letra fantasy</p>
+    <p class="times-new-roman">Este es un párrafo con tipo de letra new times roman</p>
+    <p class="monospace">Este es un párrafo con tipo de letra monospace</p><br>
+
+    <p class="left">Este es un parrafo alineado a la izquierda, mediante la propiedad y text-align de CSS</p>
+    <p class="right">Este párrafo será alineado a la derecha y lo vrás claramente por que es muy diferente al anterior</p>
+    <p class="center">Texto alineado al centro con CSS</p>
+    <p class="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos asperiores perspiciatis hic quam dolor aliquid ipsa, debitis, enim temporibus, modi necessitatibus ex. Numquam nisi magni possimus quas ipsam, impedit sint.</p><br>
+
+    <table>
+        <tr><td class="top">texto arriba</td>
+        <td class="mid">texto al medio</td>
+        <td class="bottom">Texto abajo</td></tr>
+    </table><br>
+
+    <p class="sangria"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi maxime laudantium dolore. Et, eveniet! Molestias, facere sit. Quod nostrum, ut nam quidem nemo omnis aliquid odit voluptates vero quia! Praesentium!</p><br>
+
+    <p>Texto sin transformacion CSS</p>
+    <p class="cap">Texto con transformacion capitalize en CSS</p>
+    <p class="upper">Texto con transformacion uppercase en CSS</p>
+    <p class="lower">Texto con transformacion lowercase en CSS</p><br>
+
+    <p>Texto scon espaciado normal en css</p>
+    <p class="space4">Texto scon espaciado de 4px en css</p>
+    <p class="space-2">Texto scon espaciado de -2px en css</p>
+
+</body>
+</html>
