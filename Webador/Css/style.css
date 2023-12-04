@@ -1,41 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat';
     margin: 0;
     padding: 0;
     background-color: black;
 }
+/* https://www.websitecodetutorials.com/code/css/css-center-nav.php */
 nav{
-    height: 4pxpx;
     position: sticky;
     top: 0%;
-    margin: 0;
     padding: 0;
     background-color: rgb(31, 31, 131);
     overflow: auto;
+    z-index: 1;
+    margin: 0 auto;
 }
 nav ul {
-    margin: 0 auto;
+    margin: 0;
     padding:0;
     color: white;
     display: inline-flex;
-    width: 100%;
+    width:865px;
+    padding: 0 auto;
 }
 nav ul li {
     margin: 0 auto;
     padding: 15px 20px;
-    list-style: none;
-}
-nav ul li a {
+    list-style: none;    
     color: white;
     text-decoration: none;
 }
 nav ul li:hover {
-    transition: .5s;
+    transition: .3s;
     background-color: rgba(211, 211, 211, 0.3);
 }
-nav ul li a:hover {
-    transition: .5s;
+nav ul a:hover li {
+    transition: .3s;
     color:rgb(0, 255, 242);
 }
 header {
@@ -64,9 +64,6 @@ header {
     font-size: xx-large;
 }
 .cabecera h2 {
-    margin: 50px 0;
-}
-
-.cabecera h2:first-child {
-    margin: 0;
+    margin: 70px 0 40px;
+    font-weight: lighter;
 }
