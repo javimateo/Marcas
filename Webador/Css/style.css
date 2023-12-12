@@ -67,3 +67,29 @@ header {
     margin: 70px 0 40px;
     font-weight: lighter;
 }
+.cabecera p {
+    width: 50%;
+    margin: 0 auto;
+}
+.cabecera div {
+    margin: 115px auto;
+    font-weight: bolder;
+    height: auto;
+    padding: 20px 0;
+    width: 30%;
+    background-color: rgb(31, 31, 131);
+    border: 0px;
+    border-radius: 5px;
+}
+.cabecera div:hover{
+    transition: .3s;
+    background-color: rgb(107, 201, 232);
+}
+.cabecera div a {
+    padding-top: 20px;
+    color: white;
+    text-decoration: none;
+}
+.cabecera div a:visited{
+    text-decoration: none;
+}
