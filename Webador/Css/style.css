@@ -104,14 +104,95 @@ body section h2,h3{
 body section h2 {
     font-size: xx-large;
 }
+hr {
+    width: 75%;
+    margin: 0 auto;
+    border-top: lightgray 1px solid;
+}
 #bienvenido {
+    text-align: center;
+    padding: 40px 0;
+    width: 70%;
+    margin:0 auto;
+}
+#bienvenido p:last-child{
+    padding-top: 20px;
+}
+#distribucion{
+    width: 70%;
+    margin: 0 auto;
+}
+#distribucion h2 {
     text-align: center;
 }
 #distribucion div{
     display: inline-block;
     width: 18%;
-    height: 100px;
+    margin: 0 .8% 5%;
+    vertical-align: top;
+}
+#distribucion div h3 {
+    text-align: center;
 }
 #distribucion div ul {
     list-style: "- ";
+    margin: 0;
+    padding: 0;
+}
+#distribucion div li {
+    margin:0;
+    padding-bottom: 10px;
+}
+/*Comentarios*/
+
+#opiniones .comentarios {
+    width: 50%;
+    float:left;
+    padding-left: 20px;
+}
+#opiniones .comentarios form{
+    height: 100%;
+    padding-bottom: 150px;
+}
+#opiniones .comentarios div{
+    
+}
+#opiniones .comentarios label{
+    float: left;
+    width: 40%;
+}
+#opiniones .comentarios input{
+    float: right;
+    width: 40%;
+}
+#opiniones .comentarios img {
+    width: 20px;
+    margin: 0;
+}
+#opiniones .comentarios textarea{
+    float: right;
+    height: 90px;
+}
+#opiniones .comentarios button{
+    width: 35%;
+    height: 40px;
+    margin: 0 auto;
+    font-size: large;
+    font-weight: 10;
+    color: white;
+    background-color: #5142b0;
+    border: solid 0px;
+    border-radius: 6px;
+}
+#opiniones .comentarios button:hover{
+    background-color: rgb(107, 201, 232);
+    transition: .3s;
+}
+#opiniones .estrellas {
+    float: right;
+    width: 50%;
+    margin: 0;
+}
+#opiniones .estrellas img {
+    width: 200px;
 }
