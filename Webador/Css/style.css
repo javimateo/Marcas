@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+/*estilos generales*/
 body {
     font-family: 'Montserrat';
     margin: 0;
     padding: 0;
     background-color: rgb(225, 244, 247);
 }
-/* https://www.websitecodetutorials.com/code/css/css-center-nav.php */
+
+/*menu*/
 nav{
     position: sticky;
     top: 0%;
@@ -54,6 +56,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
+/*texto cabecera*/
 .cabecera {
     margin: 0; padding: 0;
     position: absolute;
@@ -100,6 +103,7 @@ header {
 body section h2,h3{
     color: blue;
     font-weight: 400;
+    text-align: center;
 }
 body section h2 {
     font-size: xx-large;
@@ -109,6 +113,7 @@ hr {
     margin: 0 auto;
     border-top: lightgray 1px solid;
 }
+/*Bienvenida index*/
 #bienvenido {
     text-align: center;
     padding: 40px 0;
@@ -144,55 +149,141 @@ hr {
     padding-bottom: 10px;
 }
 /*Comentarios*/
-
+#opiniones h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
 #opiniones .comentarios {
-    width: 50%;
+    width: 30%;
+    padding-left: 20%;
     float:left;
-    padding-left: 20px;
 }
 #opiniones .comentarios form{
-    height: 100%;
-    padding-bottom: 150px;
+    display: flex;
 }
-#opiniones .comentarios div{
-    
+#opiniones .comentarios .labels{
+    width: 50%;
 }
-#opiniones .comentarios label{
-    float: left;
+#opiniones .comentarios .inputs{
     width: 40%;
-}
-#opiniones .comentarios input{
     float: right;
-    width: 40%;
+    display: block;
+}
+#opiniones .comentarios .inputs input{
+    width: 100%;
+    margin:2px;
+}
+#opiniones .comentarios .inputs textarea{
+    width: 100%;
+    height: 100px;
 }
 #opiniones .comentarios img {
     width: 20px;
     margin: 0;
 }
-#opiniones .comentarios textarea{
-    float: right;
-    height: 90px;
-}
 #opiniones .comentarios button{
-    width: 35%;
+    width: 70%;
     height: 40px;
-    margin: 0 auto;
     font-size: large;
-    font-weight: 10;
     color: white;
     background-color: #5142b0;
     border: solid 0px;
     border-radius: 6px;
+    margin-top: 40px;
 }
 #opiniones .comentarios button:hover{
     background-color: rgb(107, 201, 232);
     transition: .3s;
 }
+#opiniones .listacoments ul {
+    padding-left: 0;
+} 
+#opiniones .listacoments ul li {
+    list-style: none;
+    border: solid 1px lightgray;
+    padding-left: 20px;
+    display: flex;
+    width: 70%;
+    margin-bottom: 10px;
+}
+#opiniones .listacoments ul .izquierda {
+    float: left;
+}
+#opiniones .listacoments ul .derecha {
+    width: 80%;
+    float: right;
+}
+#opiniones .listacoments ul .derecha p,img{
+    float: right;
+    text-align: right;
+    padding: 7px 7px 0 0;
+}
+#opiniones .listacoments ul ul{
+    padding-left: 40px;
+}
 #opiniones .estrellas {
     float: right;
-    width: 50%;
+    width: 40%;
     margin: 0;
 }
 #opiniones .estrellas img {
     width: 200px;
+    float: left;
+}
+#logos {
+    margin-top: 20px;
+}
+#logos div{
+    padding: 0 2%;
+    height: 100px;
+    width: 80%;
+}
+#logos div img {
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+#logos div:first-child {
+    padding-left: 13%;
+}
+footer {
+    height: 110px;
+    background-color: #5142b0;
+}
+footer p {
+    padding-top: 30px;
+    font-weight: bolder;
+    font-size: small;
+}
+footer p:first-child {
+    float: left;
+    margin-left: 13%;
+    vertical-align: middle;
+}
+footer p:last-child {
+    float: right;
+    margin-right: 13%;
+    vertical-align: middle;
+}
+footer span {
+    color: lightblue;
+}
+/*Diario*/
+#diario {
+    width: 70%;
+    margin:0 auto;
+}
+/*webador*/
+#webador {
+    width: 70%;
+    margin:0 auto;
+}
+/*Manual*/
+#manual {
+    width: 70%;
+    margin:0 auto;
+}
+#ideaNegocio{
+    width: 70%;
+    margin:0 auto;
 }

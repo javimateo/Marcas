@@ -14,11 +14,11 @@
 <body>
     <nav class="menu">
         <ul>
-            <a href="" class="current"><li>INICIO</li></a>
-            <a href=""><li>IDEA DE NEGOCIO</li></a>
-            <a href=""><li>DIARIO</li></a>
-            <a href=""><li>WEBADOR</li></a>
-            <a href=""><li>MANUAL</li></a>
+            <a href="index.html" class="current"><li>INICIO</li></a>
+            <a href="IdeaDeNegocio.html"><li>IDEA DE NEGOCIO</li></a>
+            <a href="Diario.html"><li>DIARIO</li></a>
+            <a href="webador.html"><li>WEBADOR</li></a>
+            <a href="manual.html"><li>MANUAL</li></a>
             <a href=""><li>EDITAR LA PÁGINA WEB</li></a>
         </ul>
     </nav>
@@ -89,16 +89,14 @@
         <div class="comentarios">
             <h3>Añadir comentario</h3>
             <form action="" class="form_coments">
-                <div>
-                <label for="nombre">Nombre *</label>
-                <input type="text">
-                </div>
-                <div>
-                    <label for="mail">Dirección de correo electrónico *</label>
+                <div class="labels">
+                <label for="nombre">Nombre *</label><br>
+                <label for="mail">Dirección de correo electrónico *</label><br>
+                <label for="msj">Mensaje *</label>   
+            </div>
+                <div class="inputs">
                     <input type="email">
-                </div>
-                <div>
-                    <label for="msj">Mensaje *</label>
+                    <input type="text">
                     <textarea name="msj" id="msj" cols="30" rows="10"></textarea>
                 </div>
             </form>
@@ -107,23 +105,34 @@
                 <h3>Comentarios</h3>
                 <ul>
                     <li>
-                        <h4>Faura</h4>
-                        <p>Ojú espeso</p>
-                        <p>hace 12 días</p>
-                        <img src="Img/flechita.png" alt="">
+                        <div class="izquierda">
+                            <h4>Faura</h4>
+                            <p>Ojú espeso</p>
+                        </div>
+                        <div class="derecha">
+                            <a href=""><img class="agua" src="Img/flechita.png" alt=""></a><br>
+                            <p>12 días</p>
+                        </div>
                     </li>
                     <li>
-                        <h4>Enrique</h4>
-                        <p>¿A cuánto están las andaluzas?</p>
-                        <p>hace 12 días</p>
-                        <img src="Img/flechita.png" alt="">
+                        <div class="izquierda">
+                            <h4>Enrique</h4>
+                            <p>¿A cuánto están las andaluzas?</p>
+                        </div>
+                        <div class="derecha">
+                            <a href=""><img src="Img/flechita.png" alt=""></a>
+                            <p>12 días</p>
+                        </div>
                     </li>
                     <ul>
                         <li>
-                            <h4>Admin</h4>
-                            <p>Esto no es una panadería</p>
-                            <p>Hace 12 días</p>
-                            <img src="Img/flechita.png" alt="">
+                            <div class="izquierda">
+                                <h4>Admin</h4>
+                                <p>Esto no es una panadería</p>
+                            </div>
+                            <div class="derecha">
+                                <p>12 días</p>
+                            </div>
                         </li>
                     </ul>
                 </ul>
@@ -136,9 +145,14 @@
     </section>
     <hr>
     <section id="logos">
+        <div>
+            <a href="https://www.facebook.com/?locale=es_ES"><img src="Img/logo fb.png" alt=""></a>
+            <a href="https://twitter.com/?lang=es"><img src="Img/x_logo.png" alt=""></a>
+        </div>
     </section>
     <footer>
-        
+        <p>© 2023 Entornos 1ºEV Webador - J.J.E.S.M.</p>
+        <p>Con la tecnología de <span>Webador</span></p>
     </footer>
 </body>
 </html>
